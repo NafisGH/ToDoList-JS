@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Lora&display=swap');
+@import url('./stiles/normolize.css');
+@import url('./stiles/to-do-list.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+h1, h1, h3 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
