@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="./index.css" defer></script>
+    <script src="./index.js" defer></script>
 </head>
 <body class="body">
     <div class="to-do-list">
@@ -45,6 +45,25 @@
         </form>
     </div>
     
+    <template id="task-item-template">
+        <li class="to-do-list__task_item">
+            <span class="to-do-list__task-item-number"></span>
+        <input 
+        type="text" 
+        class="to-do-list__input to-do-list__input_task-item">
+        <button 
+        class="to-do-list__task_item-button 
+        to-do-list__task_item-button_type_edit" >
+        <img class="to-do-list__icon to-do-list__icon_type_edit" src="./icons/icon-edit.png">
+        </button>
+        <button 
+        class="to-do-list__task_item-button 
+        to-do-list__task_item-button_type_delete" >
+        <img class="to-do-list__icon to-do-list__icon_type_delete" src="./icons/icon-delete.png" >
+        </button>
+        </li>
+    </template>
+
     
 </body>
 </html>
