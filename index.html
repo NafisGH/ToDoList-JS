@@ -9,61 +9,57 @@
     <script src="./index.js" defer></script>
 </head>
 <body class="body">
-    <div class="to-do-list">
-        <h1 class="to-do-list__title">ToDoList</h1>
-        <form class="to-do-list__form to-do-list__form_type_add-task">
-            
-            <input 
-            type="text"
-            class="to-do-list__input to-do-list__input_type_add-task"
-            placeholder="Новая задачка..."
-            >
-            <button class="to-do-list__button to-do-list__button_type_add-task">
-                Добавить
-            </button>
-        </form>
-        <form class="to-do-list__form_task_list">
-            <ul class="to-do-list__task_list" >
-                <li class="to-do-list__task_item">
-                <span class="to-do-list__task-item-number">1</span>
-            <input 
-            type="text" 
-            class="to-do-list__input to-do-list__input_task-item">
-            <button 
-            class="to-do-list__task_item-button 
-            to-do-list__task_item-button_type_edit" >
-            <img class="to-do-list__icon to-do-list__icon_type_edit" src="./icons/icon-edit.png">
-            </button>
-            <button 
-            class="to-do-list__task_item-button 
-            to-do-list__task_item-button_type_delete" >
-            <img class="to-do-list__icon to-do-list__icon_type_delete" src="./icons/icon-delete.png" >
-            </button>
-            </li>
-            
-            </ul>
-        </form>
-    </div>
-    
-    <template id="task-item-template">
-        <li class="to-do-list__task_item">
-            <span class="to-do-list__task-item-number"></span>
-        <input 
-        type="text" 
-        class="to-do-list__input to-do-list__input_task-item">
-        <button 
-        class="to-do-list__task_item-button 
-        to-do-list__task_item-button_type_edit" >
-        <img class="to-do-list__icon to-do-list__icon_type_edit" src="./icons/icon-edit.png">
-        </button>
-        <button 
-        class="to-do-list__task_item-button 
-        to-do-list__task_item-button_type_delete" >
-        <img class="to-do-list__icon to-do-list__icon_type_delete" src="./icons/icon-delete.png" >
-        </button>
-        </li>
-    </template>
 
+    <div class="to-do-list">
+      <h1 class="to-do-list__title">ToDoList</h1>
+      <form class="to-do-list__form to-do-list__form_type_add-task">
+        <input 
+          type="text" 
+          class="to-do-list__input to-do-list__input_type_add-task"
+          placeholder="Новая задача..."
+        >
+        <button class="to-do-list__button to-do-list__button_type_add-task">
+          Добавить
+        </button>
+      </form>
+  
+      <form class="to-do-list__form-task-list">
+        <ul class="to-do-list__task-list">
+          
+        </ul>
+      </form>
+  
+    </div>
+  
+    <template id="task-item-template">
+  
+      <li class="to-do-list__task-item">
+        <span class="to-do-list__task-item-number"></span>
+        <input 
+          type="text" 
+          class="to-do-list__input to-do-list__input_task-item"
+        >
+        <button 
+          class="to-do-list__task-item-button 
+          to-do-list__task-item-button_type_edit"
+        >
+          <img 
+            class="to-do-list__icon to-do-list__icon_type_edit" 
+            src="./icons/icon-edit.png"
+          />
+        </button>
+        <button 
+          class="to-do-list__task-item-button 
+          to-do-list__task-item-button_type_delete"
+        >
+          <img 
+            class="to-do-list__icon to-do-list__icon_type_delete" 
+            src="./icons/icon-delete.png"
+          />
+        </button>
+      </li>
+  
+    </template>
     
-</body>
+  </body>
 </html>

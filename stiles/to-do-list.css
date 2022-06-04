@@ -35,7 +35,7 @@
 .to-do-list__button_type_add-task {
     font-family: 'Lora', serif;
     background-color: #fff;
-    berder: 1px solid red;
+    border: 1px solid red;
     border-radius: 10px;
     height: 100%;
     padding: 7px 15px;
