@@ -32,6 +32,29 @@ const handleAddNewTask = (text, id) => {
 
   })
 
+  taskItemEditButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    taskItemEditButton.classList.add('active');
+    taskItemInput.removeAttribute('disabled');
+    taskItemInput.focus();
+
+    taskItemInput.addEventListener('blur', () => {
+      taskItemInput.setAttribute('disabled', true);
+      taskItemEditButton.classList.remove('active');
+    }, {
+      once: true,
+    });
+
+    taskItemInput.addEventListener('keydown', (event) => {
+      if(event.code === 'Enter') {
+        taskItemInput.setAttribute('disabled', true);
+      taskItemEditButton.classList.remove('active');
+      }
+      
+    })
+  })
+
   taskItemInput.value = text;
   taskItemNumber.textContent = id;
 
